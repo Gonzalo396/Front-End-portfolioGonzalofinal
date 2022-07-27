@@ -1,0 +1,33 @@
+<form [formGroup]="miForm">
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-4">
+                <label  class="form-label mt-3"><h5>institucion</h5></label>
+                <input formControlName="institucion" type="text" class="form-control"  id="instituto" placeholder="institucion">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                
+                <label for="exampleFormControlInput1" class="form-label mt-3"><h5>titulo o curso</h5></label>
+                <input formControlName="titulo" type="text" class="form-control" id="titulo" placeholder="titulo o curso" >
+            
+            </div>
+            
+        </div>
+       
+        <div class="row">
+            <div class="col-lg-4">
+                
+                <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Tiempo</h5></label>
+                <input formControlName="tiempo" type="text" class="form-control" id="tiempo" placeholder="Tiempo">
+            
+            </div>
+        </div>
+        <div class="mt-3">
+            <button type="text" class="btn btn-secondary btn-sm mr-1" routerLink="/porfolio">Volver</button>
+            <button type="submit" class="btn btn-primary btn-sm" (click)="agregar()" >Guardar</button>
+    
+        </div>
+      </div>  
+    </form>

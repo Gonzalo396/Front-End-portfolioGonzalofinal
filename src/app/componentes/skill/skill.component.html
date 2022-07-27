@@ -1,0 +1,33 @@
+<section class="resume-section" id="education" >
+    <div class="resume-section-content">
+        <h2 class="mb-5">Skill</h2>
+        <button type="text" routerLink="/agregar-skill" class="btn btn-secondary btn-sm mb-5 " ><i class="fa-solid fa-plus"></i>Agregar</button>
+        <div class="container">
+            <div class="row align-items-center" >
+              <div class="col-lg-4" *ngFor="let data of datos">
+                <h3 class="m-1">{{data.habilidad}}</h3>
+                    <circle-progress
+                    [percent]="data.porcentaje"
+                    [radius]="85"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="8"
+                    [outerStrokeColor]="'#ff8800'"
+                    [innerStrokeColor]="'#6f5d49'"
+                    [animation]="true"
+                    [animationDuration]="300"
+                    [showSubtitle]="false"
+                
+                    ></circle-progress>
+                    
+                
+    
+            <div class="m-1"><button type="button" routerLink="/editar-skill/{{data.id}}"  class="btn btn-secondary btn-sm mb-5 m-1" ><i class="fa-solid fa-pen"></i></button>
+            <button type="button" (click)="borrarSkill(data.id)"  class="btn btn-secondary btn-sm mb-5 m-1 " ><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>  
+    </div>    
+                  
+</section>
+<hr class="m-0" />

@@ -1,0 +1,66 @@
+<form [formGroup]="miForm" >
+<div class="container" >
+    <div class="row">
+        <div class="col-lg-4">
+            <label  class="form-label mt-3"><h5>Nombre</h5></label>
+            <input formControlName="nombre" type="text" class="form-control"  id="nombre">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Apellido</h5></label>
+            <input formControlName="apellido" type="text" class="form-control" id="apellido" >
+        
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Edad</h5></label>
+            <input formControlName="edad" type="text" class="form-control" id="edad" >
+        
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>email</h5></label>
+            <input formControlName="email" type="text" class="form-control" id="email">
+        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Tel</h5></label>
+            <input formControlName="tel" type="text" class="form-control" id="tel">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Provincia</h5></label>
+            <input formControlName="provincia" type="text" class="form-control" id="provincia" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Ciudad</h5></label>
+            <input formControlName="ciudad" type="text" class="form-control" id="ciudad" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Pais</h5></label>
+            <input formControlName="pais" type="text" class="form-control" id="pais" >
+        </div>
+    </div>
+    <div class="mt-3">
+        <button type="text" class="btn btn-secondary btn-sm mr-1" routerLink="/portfolio">Volver</button>
+        <button type="text" class="btn btn-primary btn-sm" (click)="editar()" >Editar</button>
+
+    </div>
+</div>
+</form>

@@ -1,0 +1,23 @@
+<section class="resume-section" id="education" >
+    <div class="resume-section-content">
+        <h2 class="mb-5">Educación</h2>
+        <button type="text" routerLink="/agregar-educacion" class="btn btn-secondary btn-sm mb-5 " ><i class="fa-solid fa-plus"></i>Agregar</button>
+        
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5"*ngFor="let data of datos">
+                <div class="flex-grow-1" >
+
+                <h3 class="mb-0">{{data.institucion}}
+                </h3>
+                <div class="subheading mb-3">{{data.titulo}}</div>
+                    
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">{{data.tiempo}}</span></div> 
+                <div class="m-1"><button type="button" routerLink="/editar-educacion/{{data.id}}" class="btn btn-secondary btn-sm mb-5 " ><i class="fa-solid fa-pen"></i></button></div>
+                <div class="m-1"><button type="button" (click)="borrarEducacion(data.id)"  class="btn btn-secondary btn-sm mb-5 " ><i class="fa-solid fa-trash-can"></i></button></div>
+
+             </div>
+        
+      
+    </div>
+</section>
+<hr class="m-0" />

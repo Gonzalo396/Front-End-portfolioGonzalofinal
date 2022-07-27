@@ -1,0 +1,42 @@
+<form [formGroup]="miForm">
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-4">
+                <label  class="form-label mt-3"><h5>Puesto</h5></label>
+                <input formControlName="puesto" type="text" class="form-control"  id="puesto" placeholder="Puesto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                
+                <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Empresa</h5></label>
+                <input formControlName="empresa" type="text" class="form-control" id="empresa" placeholder="Empresa" >
+            
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                
+                <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Trabajo que realiza</h5></label>
+                <textarea formControlName="trabajoRealiza" type="text" class="form-control" id="trabajoRealiza" placeholder="Trabajo que realiza"></textarea>
+            
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                
+                <label for="exampleFormControlInput1" class="form-label mt-3"><h5>Tiempo</h5></label>
+                <input formControlName="tiempo" type="text" class="form-control" id="tiempo" placeholder="Tiempo">
+            
+            </div>
+        </div>
+        <div class="mt-3">
+            <button type="text" class="btn btn-secondary btn-sm mr-1" routerLink="/porfolio">Volver</button>
+            <button type="submit" class="btn btn-primary btn-sm" (click)="agregar()" >Guardar</button>
+    
+        </div>
+      </div>  
+    </form>
+
