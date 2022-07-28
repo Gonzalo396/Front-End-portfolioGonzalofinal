@@ -23,7 +23,7 @@
       'is-valid': !Password?.errors && Password?.touched}" type="password" class="form-control" id="exampleInputPassword1">
       <div *ngIf="Password?.errors && Password?.touched">
         <p *ngIf="Password?.hasError('required')" class="text-danger"> La contraseña es requerida </p>
-        <p *ngIf="Password?.hasError('minlength')" class="text-danger">La contraseña debe ser de mas de 7 caracteres</p>
+        <p *ngIf="Password?.hasError('minlength')" class="text-danger">La contraseña debe ser de mas de 8 caracteres</p>
 
 
       </div>

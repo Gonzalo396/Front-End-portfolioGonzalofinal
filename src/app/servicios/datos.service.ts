@@ -11,11 +11,11 @@ import { DatosProyecto } from '../model/datosProyectos';
   providedIn: 'root'
 })
 export class DatosService {
-  private urlHeader ='http://localhost:8080/personas/';
-  private urlEducacion ='http://localhost:8080/educacion/';
-  private urlExperiencia ='http://localhost:8080/experiencia/';
-  private urlSkill ='http://localhost:8080/skill/';
-  private urlProyectos ='http://localhost:8080/proyectos/';
+  private urlHeader ='https://murmuring-woodland-37915.herokuapp.com/personas/';
+  private urlEducacion ='https://murmuring-woodland-37915.herokuapp.com/educacion/';
+  private urlExperiencia ='https://murmuring-woodland-37915.herokuapp.com/experiencia/';
+  private urlSkill ='https://murmuring-woodland-37915.herokuapp.com/skill/';
+  private urlProyectos ='https://murmuring-woodland-37915.herokuapp.com/proyectos/';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

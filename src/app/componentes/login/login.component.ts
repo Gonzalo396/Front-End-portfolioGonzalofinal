@@ -13,7 +13,7 @@ form:FormGroup;
     this.form=this.formBuilder.group({
   
       nombreUsuario:['',[Validators.required]],
-      password:['',[Validators.required, Validators.minLength(7)]]
+      password:['',[Validators.required, Validators.minLength(8)]]
     }
     )
    }

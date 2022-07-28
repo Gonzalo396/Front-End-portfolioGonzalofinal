@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AutentificacionService {
-url="http://localhost:8080/auth/login";
+url="https://murmuring-woodland-37915.herokuapp.com/auth/login";
 currenUserSubjet: BehaviorSubject<any>;
   constructor(private http:HttpClient, private ruta:Router) { 
     console.log("el servicion de autenticacion esta corriendo");

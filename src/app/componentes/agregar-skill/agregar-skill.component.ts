@@ -22,7 +22,7 @@ export class AgregarSkillComponent implements OnInit {
     this.miForm = new FormGroup({
       id: new FormControl(this.id, Validators.required),
       habilidad: new FormControl('', Validators.required),
-      porcentaje: new FormControl('', Validators.required),
+      porcentaje: new FormControl('0', Validators.required),
       
     });
   }
